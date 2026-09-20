@@ -1,0 +1,12 @@
+LAYER — сборка APK прямо на телефоне через AndroidIDE
+
+1. Установи AndroidIDE из доверенного источника (GitHub Releases/F-Droid/официальный сайт).
+2. Открой этот проект в AndroidIDE как существующий Gradle-проект.
+3. Выбери JDK 17 в Preferences → Build & Run → JDK version.
+4. Дождись Gradle Sync.
+5. В Terminal из корня проекта выполни: ./gradlew :app:assembleDebug
+6. APK будет в: app/build/outputs/apk/debug/app-debug.apk
+
+Проект специально переведён на AGP 8.7.3 + Gradle 8.9 + compileSdk/targetSdk 35 для более консервативной совместимости с AndroidIDE.
+
+Важно: AndroidIDE больше не поддерживается разработчиками, поэтому это способ для локальной сборки, а не рекомендация для долгосрочной разработки.

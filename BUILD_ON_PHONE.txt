@@ -1,0 +1,14 @@
+LAYER — сборка APK с телефона
+
+1. Открой Android Build Studio в браузере:
+   https://mevadalabs.com/android-builder-tool/
+
+2. Выбери ZIP-файл LAYER_ready.zip.
+   Внутри ZIP settings.gradle и build.gradle находятся в КОРНЕ проекта.
+
+3. Выбери Build APK.
+
+4. Дождись завершения сборки и скачай app-release.apk.
+
+Проект использует Android Gradle Plugin 8.13.x, compileSdk/targetSdk 36 и Java 17.
+Сторонние библиотеки не используются.
